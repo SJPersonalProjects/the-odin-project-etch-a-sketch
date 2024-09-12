@@ -24,6 +24,18 @@ body {
     margin: 0 auto;
 }
 
+.top {
+    display: flex;
+    padding: 3px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    background-color: white;
+    color: var(--inactive-color);
+    width: fit-content;
+    text-align: left;
+    cursor: pointer;
+}
+
 #sketch-area {
     display: flex;
     flex-wrap: wrap;
