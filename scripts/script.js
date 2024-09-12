@@ -73,6 +73,7 @@ SLIDER.oninput = function () {
     removeGridCells();
     createGridCells();
 }
+SLIDER_VALUE.textContent = `${SLIDER.value} x ${SLIDER.value} (Resolution)`;
 
 GRID_TOGGLE.addEventListener("click", toggleGrid); //Toggles the grid on click event.
 

@@ -1,3 +1,7 @@
+/* Inter font family. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 /* Resetting the defaults of the browser. */
 * {
     margin: 0;
@@ -17,6 +21,7 @@
 
 body {
     background-color: var(--primary-color-background);
+    font-family: "inter";
 }
 
 .container {
@@ -27,7 +32,7 @@ body {
 .top {
     display: flex;
     padding: 3px;
-    margin-top: 20px;
+    margin-top: 32px;
     margin-bottom: 6px;
     background-color: white;
     color: var(--inactive-color);
@@ -36,11 +41,17 @@ body {
     cursor: pointer;
 }
 
+.top p {
+    font-weight: bolder;
+    padding: 0 8px;
+    margin: auto 0;
+}
+
 #sketch-area {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    margin: 48px auto 0 auto;
+    margin: 18px auto 0 auto;
     box-shadow: 10px 10px rgba(0, 170, 255, 0.034);
 }
 
