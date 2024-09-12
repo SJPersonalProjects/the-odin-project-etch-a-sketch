@@ -8,20 +8,68 @@
 :root {
     /* Colors. */
     --primary-color-background: aliceblue;
+
+    /* Grid. */
+    --grid-width: 600px;
+    --accent-color: #04AA6D;
+    --inactive-color: rgb(0, 0, 0, 0.25);
 }
 
 body {
     background-color: var(--primary-color-background);
 }
 
+.container {
+    width: var(--grid-width);
+    margin: 0 auto;
+}
+
 #sketch-area {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    margin: 100px auto;
+    margin: 48px auto 0 auto;
     box-shadow: 10px 10px rgba(0, 170, 255, 0.034);
 }
 
 .cell {
     border: 1px solid black;
 }
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 25px;
+    width: 100%;
+    background: rgba(200, 255, 238, 0.726);
+    outline: none;
+    opacity: .7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#slider-value {
+    margin: 0 auto;
+    text-align: right;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--accent-color);
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: var(--accent-color);
+    cursor: pointer;
+}
+
